@@ -42,7 +42,7 @@ giphy.initializePage = function (movies) {
 giphy.getMovie = function (movie) {
 	$.ajax({
 			// ajax settings
-			url: "http://api.giphy.com/v1/gifs/search",
+			url: "https://api.giphy.com/v1/gifs/search",
 			data: {
 				api_key: "6039e9a9db5140b8b08b727c3e8bd933",
 				q: movie,
