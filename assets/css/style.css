@@ -13,7 +13,7 @@ a {
 a.bttn-minimal.bttn-xs:hover {
 	color: white;
 	border-radius: 0px;
-	background: red;
+	background: #4c00ff;
 }
 
 a:hover,
