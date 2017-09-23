@@ -121,6 +121,8 @@ giphy.updateGiphyArea = function (movieResponse) {
 		// Append the new div with the image to div.giphyArea
 		divColXs12.append(img);
 		divColXs12.append(p);
+
+		// Delay appending to the page. This causes the gifs to fade-in one after the other
 		$(".giphyArea").delay(100).queue(function (next) {
 			$(this).append(divColXs12);
 			next();
