@@ -1,3 +1,16 @@
+@keyframes fadeInUp {
+	from {
+	  opacity: 0;
+	  transform: translate3d(0, 100%, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  transform: none;
+	}
+  }
+
+
 html,
 body {
 	background: black;
@@ -22,7 +35,7 @@ a:focus {
 }
 
 div.jumbotron {
-	background-color: rgba(0,0,0,.7);
+	background-color: rgba(0, 0, 0, .7);
 	background-image: url(https://media.giphy.com/media/Yqn9tE2E00k4U/giphy.gif);
 	background-size: cover;
 	background-position: center;
@@ -38,6 +51,36 @@ div.jumbotron h1 {
 	padding: 0px 10px;
 }
 
+p {
+	display: inline-block;
+	font-family: 'Roboto Condensed', sans-serif;
+	background: mediumspringgreen !important;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: darkslategrey;
+}
+
 div.input-group {
-	margin-top:20px !important;
+	margin-top: 20px !important;
+}
+
+button.glyphicon {
+	background: none;
+	border: none;
+	font-size: 14px;
+}
+
+#submit-add.bttn-material-flat.bttn-success {
+	background: mediumspringgreen !important;
+	color: darkslategrey;
+}
+
+div.col-xs-12.col-md-4 {
+	animation: fadeInUp .8s;
+   overflow: hidden;
+}
+
+div.col-xs-12.col-md-4 img {
+	display: block;
+	cursor: pointer;
 }
